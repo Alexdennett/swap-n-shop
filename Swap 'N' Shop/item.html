@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="item.js"></script>
+    <title>Swap 'N' Shop</title>
+
+    <link href="item.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="images/favicon(1).ico">
+</head>
+
+<body>
+    <div id="footer_wrapper">
+        <div id="wrapper">
+
+            <header id="banner">
+                <img id="logo" src="SWAP_N_SHOP.png" href = "index.html" alt="SwapNShopLogo">
+                <h1 id="title">UNIVERSITY OF BRIGHTON</h1>
+                <div id="top_user_info">
+                    <img id="user_icon" src="usericon.png" href="profile.html">
+                </div>
+            </header>
+
+          
+            
+                <!-- Login Page --> 
+            
+    <div id="logIn" class="login">
+    
+        <form class="loginForm">
+            
+            <div class="imglogin">
+                <span id="close" class="close">&times;</span>
+                <img src="icon.png" alt="Avatar" class="avatar">
+            </div>
+        
+        
+                <div class="loginBox">
+                 <span class="create" id="create"><b><a href='#'>Create an account here</a></b></span> 
+                  
+                  <br>
+                  <br>
+                  
+                  <label for="username"><b>Username</b></label>
+                  <input class="login_input" type="text" placeholder="Enter Username" name="username">
+            
+                  <label for="password"><b>Password</b></label>
+                  <input class="login_input" type="password" placeholder="Enter Password" name="password">
+
+                  <a href="profile.html">
+                      <button class="Button" id="login_button" type="submit">Login</button>
+                    </a>
+
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                  
+                  
+                </div>
+    
+        </form>
+    </div>
+
+    <main id="results_wrapper">
+        <div id="item_block">
+            <p id="item_block_title">Desk chair</p>
+            <p id="item_block_price">£75</p>
+            <div id="line_space"></div>
+            <div id="item_block_seller_info">
+                <div id= "text_seller_info">
+                    <p id="seller_info_name">
+                        John Smith
+                    </p>
+                    <img src="user icon.png" id="seller_info_img">
+                    <p id="seller_info_location">
+                        LOCATION: Falmer
+                    </p>
+                    <p id="seller_info_date">
+                    DATE LISTED: 11/05/2021
+                    </p>
+                </div>
+               
+                <div id="item_block_buy_button">
+                    <button id="buy_button">BUY</button>   
+                </div>
+            </div>
+            <div id="div_item_block_img">
+                <img src="deskchair.jpg" id="item_block_img">
+            </div>
+            <p id="item_block_desc">Brand new desk chair, never before used. Great deal buy now!</p>
+            
+            
+        </div>
+
+    </main>
+
+             <!-- Create Profile -->
+    <div id="createprofile" class="crprof">
+    
+        <form class="createForm">
+            
+            <div class="imglogin">
+                <span id="closeCreate" class="close">&times;</span>
+                <img src="icon.png" alt="Avatar" class="avatar">
+            </div>
+                  
+                  <label for="title"><b> *Title: </b></label>
+                  <select id="titles">
+                      <option value=""></option>
+                      <option value="Mrs">Mrs</option>
+                      <option value="Mr">Mr</option>
+                      <option value="Miss">Miss</option>
+                      <option value="Ms">Ms</option>
+                      <option value="Mx">Mx</option>
+                  </select>
+
+                  <br>
+                  <br>
+
+                  <label for="email"><b>*Enter Email: </b></label>
+                  <input type="text" placeholder="Enter Email" name="email">
+
+                  <label for="user"><b>*Create a Username: </b></label>
+                  <input type="text" placeholder="Enter a Username" name="username">
+            
+                  <label for="password"><b>*Create a Password: </b></label>
+                  <input type="password" placeholder="Create a Password" name="password">
+
+                  <label for="campus"><b>Campus: </b></label>
+                  <select id="campus">
+                      <option value=""></option>
+                      <option value="Falmer">Falmer</option>
+                      <option value="Moulsecoomb">Moulsecoomb</option>
+                      <option value="Eastbourne">Eastbourne</option>
+                      <option value="City">City</option>
+                  </select>
+            
+                  <button class="Button" type="submit">Create Account</button>
+                  
+                  <label>
+                    <input type="checkbox" name="notifications"> Keep up-to-date with us by recieiving Email notifications!
+                  </label>
+                  
+                  
+                </div>
+    
+        </form>
+    </div>
+</div>
+
+            <aside>
+
+            </aside>
+
+ </div>
+
+
+    <footer class="footer">
+        <p><a href="#wrapper">Go to top</a></p>
+        <small>&copy; 2021, Brighton Uni. </small>
+        <a href="mailto:b.brighton@brighton.ac.uk">Contact Swap 'N' Shop</a>
+    </footer>
+
+</body>
+
+</html>

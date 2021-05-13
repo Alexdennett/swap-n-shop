@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="profile.js"></script>
+        <title>Swap 'N' Shop</title>
+    
+        <link href="styles.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+        <link rel="icon" type="image/ico" href="images/favicon(1).ico">
+    </head>
+
+    <body>
+
+        <div id="footer_wrapper">
+            <div id="wrapper">
+    
+                <header id="banner">
+                    <img id="logo" src="SWAP_N_SHOP.png" href = "index.html" alt="SwapNShopLogo">
+                    <h1 id="title">UNIVERSITY OF BRIGHTON</h1>
+                    <div id="top_user_info">
+                        <img id="user_icon" src="usericon.png" href="#profile">
+                    </div>
+                </header>
+    
+    
+                <div class="sidenav">
+                    <div id="userProfile">
+                        <a href="#profile">Profile</a>
+                    </div>
+                    <div id="security">
+                        <a href="securityPage">Security </a>
+                    </div>
+                    <div id="pref">
+                        <a href="#Pref">Preferences </a>
+                    </div> 
+                     <div id="createL">
+                        <a href="#CreateL"> Create a Listing </a>
+                    </div>   
+                    <div id="ItemsListed">
+                        <a href="#Useritems">Listed Items</a>
+                    </div> 
+    
+                </div>
+   
+                <main>
+                    <!------------Profile Page -------------->
+                    <div id="profile">
+
+                        <img src="icon.png" alt="Avatar" class="avatar" id="pAvatar">
+                        <br>
+
+                        <div id="pText">
+                        <h2> Welcome Back User1234! </h2>
+                        </div>
+                        <br>
+
+                        <h4> The details we have saved for you... </h4>
+                        <br>
+                        <h3>User Email: </h3> 
+                        <p class="pBox">example.user@brighton.ac.uk</p>
+
+                        <h3>Username: </h3> 
+                        <p class="pBox">User1234</p>
+                        <label for="newUser"><h3>Change Username here:</h3></label>
+                        <input type="text" placeholder="Enter new Username">
+
+                        <h3>User Campus: </h3> 
+                        <p class="pBox">Falmer</p>
+                        <label for="newCampus"><h3>Change Campus here:</h3></label>
+                        <select id="Campus">
+                            <option value=""></option>
+                            <option value="Falmer">Falmer</option>
+                            <option value="Moulsecoomb">Moulsecoomb</option>
+                            <option value="Eastbourne">Eastbourne</option>
+                            <option value="City">City</option>
+                        </select>
+
+                        <br>
+                        <br>
+                        <br>
+    
+
+                    </div>
+                        <!------------Security Page -------------->
+                <div id="securityPage">
+                    <img src="icon.png" alt="Avatar" class="avatar" id="pAvatar">
+                    <br>
+
+                    <div id="pText">
+                    <h2> Welcome Back User1234! </h2>
+                    </div>
+                    <br>
+
+                    <h4> The details we have saved for you... </h4>
+                    <br>
+
+                    <h3>Password: </h3> 
+                        <p class="pBox">Password123</p>
+                        <label for="newUser"><h3>Change Password here:</h3></label>
+                        <input type="password" placeholder="Enter a new Password" name="password">
+                        <input type="password" placeholder="*Confirm new password" name="password">
+                        <button class="Button" type="submit">Change Password</button>
+                </div>
+
+                         <!------------Preferences Page -------------->
+                <div id="prefPage">
+                    <img src="icon.png" alt="Avatar" class="avatar" id="pAvatar">
+                    <br>
+
+                    <div id="pText">
+                    <h2> Welcome Back User1234! </h2>
+                    </div>
+                    <br>
+
+                    <h4>Manage the way we notify you...</h4>
+                    <br>
+                    <br>
+
+                    <label class="pBox">
+                        <input type="checkbox" name="notification_email"> Keep up-to-date with us by recieiving Email notifications!
+                      </label>
+                      <br>
+                      <br>
+                </div>   
+
+
+                        <!-------------Create a Listing ------------->
+
+                        <div id="CreateL">
+                            <br>
+                            <div id="pText">
+                            <h2> Create a listing...</h2>
+                            </div>
+                            <br>
+                            <br>
+                            <form id="add_product">
+                            <br>
+                            <label for="listing_title"><h4>Listing Title:</h4></label>
+                            <br>
+                            <input class="listing_input" id="listing_title" type="text" placeholder="Enter Title" name="listing_title">
+                            <br>
+                            <br>
+                            <label for="listing_desc"><h4>Description: </h4></label>
+                            <br>
+                            <textarea id="listing_desc" name="description" rows="10" cols="110" placeholder="Enter Description"></textarea>
+                            <br>
+                            <br>
+                            <h4> Add Images: </h4>
+                            <br>
+                            <form action="upload.php" method="post" enctype="multipart/form-data">
+                                <input type="file" id="myFile" name="myFile">
+                            </form>
+                            <br>
+                            <br>
+                            <h4> Listing Category: </h4>
+                            <br>
+                            <form id="categories_radio">
+                                <input id="Electronics" type="radio" value="Electronics" name="category">
+                                <label for="Electronics">Electronics</label>
+                                
+                                <input id="Home" type="radio" value="Home" name="category"><label for="Home">Home</label>
+                               
+                                <input id="Garden" type="radio" value="Garden" name="category"> <label for="Garden">Garden</label>
+                                
+                                <input id="Clothes" type="radio" value="Clothes" name="category"><label for="Clothes">Clothes</label>
+                             
+                                <input id="Books" type="radio" value="Books" name="category">   <label for="Books">Books</label>
+                               
+                                <input id="Art" type="radio" value="Art" name="category"> <label for="Art">Art</label>
+                               
+                                <input id="Miscellaneous" type="radio" value="Miscellaneous" name="category"> <label for="Miscellaneous">Misc</label>
+                            </form>
+                            <br>
+                            <br>
+                            
+                        <label for="price"><h4> Item Price:</h4></label>
+                        <br>
+                        <input id="price" type="text"  placeholder="£">
+
+                        <br>
+                        <br>
+                        <label for="campus"><h4>Location:</h4></label>
+                        <select id="Campus">
+                            <option value=""></option>
+                            <option value="Falmer">Falmer</option>
+                            <option value="Moulsecoomb">Moulsecoomb</option>
+                            <option value="Eastbourne">Eastbourne</option>
+                            <option value="City">City</option>
+                        </select>
+                        <br>
+                        <br>
+                        <button id="add_listing_button">POST</button>
+                        <br>
+                        <br>
+                        <h3 id="result_output"></h3>
+                        <br>
+                        </form>
+                        
+                            
+                        </div>
+
+                        <!------------Listed Items Page -------------->
+
+                    <div id="userItems">
+
+                        <img src="icon.png" alt="Avatar" class="avatar" id="pAvatar">
+                        <br>
+    
+                        <div id="pText">
+                        <h2> Welcome Back User1234! </h2>
+                        </div>
+                        <br>
+
+                        <h4> Your live listings:
+
+                        </h4>
+                        <br>
+
+                    </div>
+    
+                </main>
+
+    
+                <aside>
+    
+                </aside>
+    
+         </div>
+    
+    
+         <footer class="footer">
+            <div id="footer_word">
+                <br>
+                <h5> <a href="index.php" > Home</a> | Login | <a href="tc.html">Terms and Conditions</a> | <a href="mailto:b.brighton@brighton.ac.uk">Contact Us</a> | <a href="about.html" >About Us</a></h5>
+                   
+            </div>
+            </footer>
+
+
+    </body>
+
